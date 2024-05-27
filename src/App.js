@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 // components takes precedence over default styles.
 import './App.css';
 import AddHours from './Pages/AddHours';
+import { Routes } from 'react-router-dom';
 /*import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { all } from '@awesome.me/kit-KIT_CODE/icons'
@@ -28,11 +29,11 @@ function App() {
             <div class="form-group">
       
     
-            <a className='btn btn-lg btn primary' href='/AddClass' role='button'>
+            <a className='btn btn-lg btn primary' href='/AddHours' role='button'>
             Current Hours
             </a>
       
-           <a href='/AddClass'>
+           <a href=<Routes/>>
             <button type="button">Add Hours</button>
             </a>
 
