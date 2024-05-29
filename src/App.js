@@ -6,6 +6,7 @@ import {BrowserRouter as Router,Routes, Route } from 'react-router-dom';
 import './App.css';
 import AddHours from './Pages/AddHours';
 import Home from './Pages/Home';
+import CurrentHours from './Pages/CurrentHours';
 import { Link } from 'react-router-dom';
 /*import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -22,6 +23,7 @@ function App() {
           <Routes>
             <Route path='/' element = {<Home />} />
             <Route path= '/AddHours' element = {<AddHours/>} />
+            <Route path= '/CurrentHours' element = {<CurrentHours/>} />
           </Routes>
         </Router>
     

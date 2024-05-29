@@ -9,6 +9,24 @@ export default function AddHours () {
                 <option value="3">Three</option>
                 </select>
             </div>
+
+            <div className="form-group">
+                <select class="custom-select custom-select-lg mb-3">
+                <option selected>Class category</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                </select>
+            </div>
+
+            <div className="form-group">
+                <select class="custom-select custom-select-lg mb-3">
+                <option selected>Hours to log</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+                </select>
+            </div>
         </form>
         
         
