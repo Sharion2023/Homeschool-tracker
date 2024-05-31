@@ -8,6 +8,7 @@ import AddHours from './Pages/AddHours';
 import Home from './Pages/Home';
 import CurrentHours from './Pages/CurrentHours';
 import { Link } from 'react-router-dom';
+import AddNewClass from './Pages/AddNewClass';
 /*import ReactDOM from 'react-dom'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { all } from '@awesome.me/kit-KIT_CODE/icons'
@@ -24,6 +25,7 @@ function App() {
             <Route path='/' element = {<Home />} />
             <Route path= '/AddHours' element = {<AddHours/>} />
             <Route path= '/CurrentHours' element = {<CurrentHours/>} />
+            <Route path= '/AddNewClass' element = {<AddNewClass/>} />
           </Routes>
         </Router>
     
