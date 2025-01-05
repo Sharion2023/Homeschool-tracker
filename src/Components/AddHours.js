@@ -16,6 +16,7 @@
          // Reset the text field after submission (optional)
          setLocation('');
        };
+       console.log(location)
   console.log('here');
 
 
