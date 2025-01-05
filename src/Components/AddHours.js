@@ -2,11 +2,17 @@
 
  export default function AddHours () {
      const [location, setLocation] = useState('');
+     const [addHours, setAddHours] = useState(0);
 
      const handleLocationChange = (event) => {
         setLocation(event.target.value);
         console.log(location);
         };
+
+     const handleHoursChange = (event) => {
+        setAddHours(event.target.value);
+        console.log(addHours);
+        }
 
      const handleSubmit = (event) => {
          event.preventDefault(); // Prevents the default form submission behavior
@@ -16,8 +22,10 @@
          // Reset the text field after submission (optional)
          setLocation('');
        };
+
        console.log(location)
-  console.log('here');
+        console.log('here');
+        console.log(addHours);
 
 
     return (
