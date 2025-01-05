@@ -1,11 +1,13 @@
 export default function AddNewClass () {
-    <form>
-        <div class="form-group">
-                <label for="formGroupExampleInput">Example label</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Input class name"></input>
-        </div>
 
-        <div className="form-group">
+    return(
+        <form>
+            <div class="form-group">
+                <label for="formGroupExampleInput">Class Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Input class name"></input>
+            </div>
+
+            <div className="form-group">
                 <select class="custom-select custom-select-lg mb-3">
                 <option selected>Class category</option>
                 <option value="1">Math</option>
@@ -15,7 +17,10 @@ export default function AddNewClass () {
                 <option value="5">Language Arts</option>
                 <option value="6">Elective</option>
                 </select>
-        </div>
+            </div>
+
+            <input class="btn btn-primary" type="submit" value="Submit"></input>
     
-    </form>
+        </form>
+    )
 }
