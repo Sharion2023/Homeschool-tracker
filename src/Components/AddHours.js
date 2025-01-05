@@ -11,14 +11,15 @@
      const handleSubmit = (event) => {
          event.preventDefault(); // Prevents the default form submission behavior
          // Process the submitted text here
+        console.log('location changed');
          console.log('Submitted location:', location);
          // Reset the text field after submission (optional)
          setLocation('');
        };
   console.log('here');
-  console.log('testing submitted')
-    return (
 
+
+    return (
         <form>
             <div className="form-group">
                 <select class="custom-select custom-select-lg mb-3">
@@ -30,12 +31,12 @@
             </div>
 
             <div className="form-group">
-                <select class="custom-select custom-select-lg mb-3">
+                <select class="custom-select custom-select-lg mb-3" value = {location} onChange= {handleLocationChange}>
                 <option selected>Location</option>
-                <option value="1">Home Location</option>
-                <option value="2">Other</option>
-                onChange= {handleLocationChange};
-                </select>
+                <option value="Home">Home Location</option>
+                <option value="Other">Other</option>
+
+                 </select>
             </div>
 
             <input class="btn btn-primary" type="submit" value="Submit" onSubmit={handleSubmit}></input>
