@@ -1,4 +1,5 @@
- import React, {useState} from 'react';
+import {useState} from 'react';
+import Button from 'react-bootstrap/Button'
 
  export default function AddHours () {
      const [location, setLocation] = useState('');
@@ -57,6 +58,7 @@
             </div>
 
             <input class="btn btn-primary" type="submit" value="Submit" onSubmit={handleSubmit}></input>
+             <Button>My Button</Button>
         </form>
         
         

@@ -20,14 +20,14 @@ function App() {
       
 
 
-      <Router>       
+
           <Routes>
             <Route path='/' element = {<Home />} />
             <Route path= '/AddHours' element = {<AddHours/>} />
             <Route path= '/CurrentHours' element = {<CurrentHours/>} />
             <Route path= '/AddNewClass' element = {<AddNewClass/>} />
           </Routes>
-        </Router>
+
     
         
   

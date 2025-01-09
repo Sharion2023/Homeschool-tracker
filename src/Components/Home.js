@@ -1,9 +1,12 @@
-import React from "react" 
- 
+import React from "react"
+import 'bootstrap/dist/css/bootstrap.css';
+import { Container } from 'react-bootstrap';
+
  export default function Home()  {
     return(
         <>
-    <div>
+
+    <div className="text-center">
 
           <h1 className=".App-header">
             <p>
@@ -17,7 +20,7 @@ import React from "react"
     <div className='container'>
 
     <form class="form-inline" action="/action_page.php">
-      <div class="form-control">
+      <div className="text-center">
 
 
         <a className='btn btn-lg btn primary' href='/CurrentHours' role='button'>
@@ -33,7 +36,7 @@ import React from "react"
         </a>
 
       </div>
-    </form> 
+    </form>
     </div>
     </section>
     </>
