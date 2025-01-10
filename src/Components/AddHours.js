@@ -35,7 +35,7 @@ import Button from 'react-bootstrap/Button'
 
 
     return (
-        <form>
+        <form className='text-center'>
             <div className="form-group">
                 <select class="custom-select custom-select-lg mb-3" value = {addHours} onChange= {handleHoursChange}>
                 <option selected>Hours to log</option>

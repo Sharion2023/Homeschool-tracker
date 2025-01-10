@@ -9,7 +9,7 @@ export default function CurrentHours () {
 
     <Container>
         <div className="text-center">
-        <p>Your current hours displayed</p>
+        <p><strong>Your current hours displayed</strong></p>
         <p>Cumulative Hours: {AddHours.current} </p>
         <p>Core Hours: {AddHours.coreHours} </p>
         <p>Regular Location Hours: {AddHours.regLocationHours}</p>

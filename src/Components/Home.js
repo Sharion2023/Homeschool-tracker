@@ -1,18 +1,25 @@
 import React from "react"
 import 'bootstrap/dist/css/bootstrap.css';
 import { Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSchool } from '@fortawesome/free-solid-svg-icons'
+
 
  export default function Home()  {
     return(
         <>
+        <h1 className="text-center">
+        <FontAwesomeIcon icon={faSchool} />
+        </h1>
+
 
     <div className="text-center">
 
-          <h1 className=".App-header">
+          <h2 className=".App-header">
             <p>
               Welcome to Homeschool Hours Tracker
             </p>
-          </h1>
+          </h2>
     </div>
 
     <section>

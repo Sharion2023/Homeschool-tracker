@@ -1,7 +1,7 @@
 export default function AddNewClass () {
 
     return(
-        <form>
+        <form >
             <div class="form-group">
                 <label for="formGroupExampleInput">Class Name</label>
                 <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Input class name"></input>
