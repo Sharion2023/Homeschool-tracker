@@ -35,8 +35,13 @@ import Button from 'react-bootstrap/Button'
 
 
     return (
-        <form className='text-center'>
-            <div className="form-group">
+        <>
+
+        <h1 className='text-center'>Let's Log Your Awesome adventures!</h1>
+
+
+        <form className='text-center' >
+            <div className="form-group"  class="mt-4 mb-3">
                 <select class="custom-select custom-select-lg mb-3" value = {addHours} onChange= {handleHoursChange}>
                 <option selected>Hours to log</option>
                 <option value="1">1</option>
@@ -60,6 +65,7 @@ import Button from 'react-bootstrap/Button'
             <input class="btn btn-primary" type="submit" value="Submit" onSubmit={handleSubmit}></input>
              <Button>My Button</Button>
         </form>
+        </>
         
         
    

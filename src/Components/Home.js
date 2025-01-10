@@ -11,6 +11,7 @@ import { faSchool } from '@fortawesome/free-solid-svg-icons'
         <h1 className="text-center">
         <FontAwesomeIcon icon={faSchool} />
         </h1>
+        <hr></hr>
 
 
     <div className="text-center">
@@ -20,6 +21,7 @@ import { faSchool } from '@fortawesome/free-solid-svg-icons'
               Welcome to Homeschool Hours Tracker
             </p>
           </h2>
+          <hr></hr>
     </div>
 
     <section>
