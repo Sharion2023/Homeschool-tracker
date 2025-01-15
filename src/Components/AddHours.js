@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button'
 
  export default function AddHours () {
      const [location, setLocation] = useState('');
-     const [addHours, setAddHours] = useState(0);
+     const [newHours, setNewHours] = useState(0);
      const [current, setCurrentHours] = useState (0);
      const [coreHours, setCoreHours] = useState (0);
      const [regLocationHours, setRegLocationHours] = useState (0);
@@ -14,8 +14,8 @@ import Button from 'react-bootstrap/Button'
         };
 
      const handleHoursChange = (event) => {
-        setAddHours(event.target.value);
-        console.log(addHours);
+        setNewHours(event.target.value);
+        console.log(newHours);
         }
 
      const handleSubmit = (event) => {
@@ -24,14 +24,14 @@ import Button from 'react-bootstrap/Button'
         console.log('location changed');
          console.log('Submitted location:', location);
          console.log('hours changed');
-                  console.log('Submitted hours:', addHours);
+                  console.log('Submitted hours:', setNewHours);
          // Reset the text field after submission (optional)
          //setLocation('');
        };
 
        console.log(location)
         console.log('here');
-        console.log(current);
+        console.log('current hours:' + current);
 
 
     return (
@@ -42,7 +42,7 @@ import Button from 'react-bootstrap/Button'
 
         <form className='text-center' >
             <div className="form-group"  class="mt-4 mb-3">
-                <select class="custom-select custom-select-lg mb-3" value = {addHours} onChange= {handleHoursChange}>
+                <select class="custom-select custom-select-lg mb-3" value = {newHours} onChange= {handleHoursChange}>
                 <option selected>Hours to log</option>
                 <option value="1">1</option>
                 <option value="1.5">1.5</option>
@@ -63,7 +63,6 @@ import Button from 'react-bootstrap/Button'
             </div>
 
             <input class="btn btn-primary" type="submit" value="Submit" onSubmit={handleSubmit}></input>
-             <Button>My Button</Button>
         </form>
         </>
         

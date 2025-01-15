@@ -1,10 +1,16 @@
 export default function AddNewClass () {
 
     return(
+
+        <div class="d-flex justify-content-center align-items-center min-vh-100" >
+    
+            <div class="card p-4 shadow" >
+            <h4 class="card-title text-center mb-4">Enter your new class information</h4>
+
         <form >
-            <div class="form-group">
+            <div class="form-group" class="mt-4 mb-3">
                 <label for="formGroupExampleInput">Class Name</label>
-                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Input class name"></input>
+                <input type="text" class="form-control " id="formGroupExampleInput" placeholder="Input class name"></input>
             </div>
 
             <div className="form-group">
@@ -22,5 +28,8 @@ export default function AddNewClass () {
             <input class="btn btn-primary" type="submit" value="Submit"></input>
     
         </form>
+
+            </div>
+        </div>
     )
 }

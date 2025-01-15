@@ -4,7 +4,8 @@ import { Container } from 'react-bootstrap';
 
 export default function CurrentHours () {
 
-
+    console.log("here");
+    console.log({AddHours});
     return(
 
     <Container>
@@ -14,6 +15,12 @@ export default function CurrentHours () {
         <p>Core Hours: {AddHours.coreHours} </p>
         <p>Regular Location Hours: {AddHours.regLocationHours}</p>
         </div>
+
+        
     </Container>
+
+    
     )
+
+   
 }
