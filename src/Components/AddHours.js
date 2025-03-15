@@ -2,36 +2,7 @@ import {useState} from 'react';
 import Button from 'react-bootstrap/Button'
 
  export default function AddHours () {
-     const [location, setLocation] = useState('');
-     const [addHours, setAddHours] = useState(0);
-     const [current, setCurrentHours] = useState (0);
-     const [coreHours, setCoreHours] = useState (0);
-     const [regLocationHours, setRegLocationHours] = useState (0);
 
-     const handleLocationChange = (event) => {
-        setLocation(event.target.value);
-        console.log(location);
-        };
-
-     const handleHoursChange = (event) => {
-        setAddHours(event.target.value);
-        console.log(addHours);
-        }
-
-     const handleSubmit = (event) => {
-         event.preventDefault(); // Prevents the default form submission behavior
-         // Process the submitted text here
-        console.log('location changed');
-         console.log('Submitted location:', location);
-         console.log('hours changed');
-                  console.log('Submitted hours:', addHours);
-         // Reset the text field after submission (optional)
-         //setLocation('');
-       };
-
-       console.log(location)
-        console.log('here');
-        console.log(current);
 
 
     return (
