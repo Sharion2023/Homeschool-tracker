@@ -3,6 +3,7 @@ import AddHours from "./AddHours";
 import { Container } from "react-bootstrap";
 
 export default function CurrentHours() {
+  const [current, setCurrentHours] = useState(0);
   return (
     <Container>
       <div className="hours-display">
@@ -11,7 +12,7 @@ export default function CurrentHours() {
         <div className="hours-metrics">
           <div className="hours-metric">
             <span className="hours-metric-label">Cumulative Hours</span>
-            <span className="hours-metric-value">{AddHours.current}</span>
+            <span className="hours-metric-value">{current}</span>
           </div>
 
           <div className="hours-metric">

@@ -17,7 +17,6 @@ import { all } from '@awesome.me/kit-KIT_CODE/icons'
 library.add(...all)*/
 
 function App() {
-  const [current, setCurrentHours] = useState(0);
   const [coreHours, setCoreHours] = useState(0);
   const [regLocationHours, setRegLocationHours] = useState(0);
 
@@ -39,8 +38,8 @@ function App() {
       <Route
         path="/CurrentHours"
         element={<CurrentHours />}
-        current={current}
-        setCurrent={setCurrentHours}
+        // current={current}
+        // setCurrent={setCurrentHours}
       />
       <Route path="/AddNewClass" element={<AddNewClass />} />
     </Routes>

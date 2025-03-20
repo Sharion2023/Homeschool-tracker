@@ -22,7 +22,7 @@ export default function Home() {
             href="/CurrentHours"
             role="button"
           >
-            <button className="App-button">Current Hours</button>
+            <button className="App-button">See Current Hours</button>
           </a>
 
           <a className="btn btn-lg btn primary" href="/AddHours" role="button">

@@ -18,7 +18,7 @@ export default function AddHours() {
 
   const handleHoursChange = (event) => {
     setAddHours(event.target.value);
-    console.log(addHours);
+    console.log("Adding hours:" + addHours);
   };
 
   const handleSubmit = (event) => {
@@ -28,6 +28,8 @@ export default function AddHours() {
     console.log("Submitted location:", location);
     console.log("hours changed");
     console.log("Submitted hours:", addHours);
+    //add hours at location to database
+
     // Reset the text field after submission (optional)
     //setLocation('');
   };
@@ -35,6 +37,19 @@ export default function AddHours() {
   return (
     <form className="hours-form">
       <h3 className="hours-form-title">Log Your Hours</h3>
+
+      <div className="form-group">
+        <label className="form-label">Class</label>
+        <select
+          className="form-select"
+          value={location}
+          onChange={handleLocationChange}
+        >
+          <option value="">Select class</option>
+          <option value="Home">Home Location</option>
+          <option value="Other">Other</option>
+        </select>
+      </div>
 
       <div className="form-group">
         <label className="form-label">Hours to log</label>
