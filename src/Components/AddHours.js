@@ -1,16 +1,12 @@
 import { useState } from "react";
 import Button from "react-bootstrap/Button";
 
-export default function AddHours() {
-  // {
-  //   // addHours,
-  //   // setAddHours,
-  //   // location,
-  //   // setLocation,
-  // }
-  const [location, setLocation] = useState("");
-  const [addHours, setAddHours] = useState(0);
-
+export default function AddHours({
+  addHours,
+  setAddHours,
+  location,
+  setLocation,
+}) {
   const handleLocationChange = (event) => {
     setLocation(event.target.value);
     console.log(location);

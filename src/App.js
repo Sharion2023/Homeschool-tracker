@@ -19,6 +19,8 @@ library.add(...all)*/
 function App() {
   const [coreHours, setCoreHours] = useState(0);
   const [regLocationHours, setRegLocationHours] = useState(0);
+  const [location, setLocation] = useState("");
+  const [addHours, setAddHours] = useState(0);
 
   // console.log(location);
   // console.log("here");
@@ -29,11 +31,14 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route
         path="/AddHours"
-        element={<AddHours />}
-        // addHours={addHours}
-        // setAddHours={setAddHours}
-        // location={location}
-        // setLocation={setLocation}
+        element={
+          <AddHours
+            addHours={addHours}
+            setAddHours={setAddHours}
+            location={location}
+            setLocation={setLocation}
+          />
+        }
       />
       <Route
         path="/CurrentHours"
